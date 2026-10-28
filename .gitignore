@@ -55,3 +55,6 @@ coverage/
 .vscode/
 .idea/
 Thumbs.db
+
+# Local dev user store (see src/server/users.ts)
+.data/

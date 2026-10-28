@@ -1,5 +1,11 @@
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
+**Read `README.md` before starting any task.** It explains what the app is, where the story content lives, the project layout, and the design principles (finite screens, no attention hooks, readable type) that every new feature must follow.
+
+## Release blocker: no production database yet
+
+Accounts and sessions are stored in JSON files under `.data/` (see `src/server/`). That is for development only, and EAS Hosting has no writable disk. **Do not release, deploy or submit the app** (`eas deploy`, production `eas build`, `eas submit`, store uploads) until a real database backs the stores in `src/server/`. If asked to release, stop and remind the user first. The file store deliberately throws when `NODE_ENV === 'production'`; never remove or bypass that check. Delete this section once the database is in place.
+
 ## Expo has changed — do not trust your training data
 
 Expo ships breaking changes every SDK release. APIs you remember are likely renamed, moved, or removed. Before writing any code that touches an Expo, EAS, or React Native API:

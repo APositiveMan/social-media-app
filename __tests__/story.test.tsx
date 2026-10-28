@@ -1,6 +1,7 @@
 import { fireEvent, renderRouter, screen } from 'expo-router/testing-library';
 
 import { story, toParagraphs } from '../content/story';
+import RootLayout from '../src/app/_layout';
 import ClosingScreen from '../src/app/closing';
 import WelcomeScreen from '../src/app/index';
 import StoryScreen from '../src/app/story';
@@ -8,6 +9,7 @@ import StoryScreen from '../src/app/story';
 const EXPECTED_CHAPTER_COUNT = 7;
 
 const routes = {
+  _layout: RootLayout,
   index: WelcomeScreen,
   story: StoryScreen,
   closing: ClosingScreen,

@@ -8,6 +8,7 @@ const palettes = {
     accent: '#4F6F63',
     onAccent: '#FFFFFF',
     track: '#E2DDD2',
+    danger: '#A3412F',
   },
   dark: {
     background: '#161615',
@@ -16,6 +17,7 @@ const palettes = {
     accent: '#8FB3A5',
     onAccent: '#161615',
     track: '#33322F',
+    danger: '#E58C7A',
   },
 };
 
